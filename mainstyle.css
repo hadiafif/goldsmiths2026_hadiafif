@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    background: #000000;
+    color: #ffea00;
+}
+p {
+    font-size: 30pt;
+    background-color: red;
+    padding: 15px;
+}
+
+.top {
+    background-color: white;
+    color: black;
+}
+
+#john {background-color: darkred; font-family: Figtree, sans-serif;
+}
