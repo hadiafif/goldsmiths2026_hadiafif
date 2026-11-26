@@ -16,20 +16,32 @@
         var age = 29;
         var length = 100.5;
         age = age + 1;
+        var NamesToRemember = ['hadi', 'john', 'kevin']; // this is a list or array
+        var ListOfImages = ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGGKVskN4xdw6WnI1c8N-KtrPOfot5SEvQdpsyTsX58g&s=10', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcH7T9Gy2SL-j7sczXKQuPlhOkLNiXpdXAZDeGbAC4g&s=10'];
 
-        alert(myfirstmemory);
+        NamesToRemember[1] = 'karl';
         console.log(myfirstmemory);
         console.log(age)
+        //objects define groups, instances define individuals
+        // console can do so many things. the log in blue is what it can do.
+
+        // this is how to make a function. we are making this function because we need line 30 to understand
+        // how to jump forward in the code and get the information needed. the information is in the "box" (curly brackets)
+        function init ()
+        {   document.getElementById('john').innerText = NamesToRemember[1];
+            document.getElementById('changeimage').src = ListOfImages[0];
+
+        }
     </script>
 </head>
-<body>
+<body onload="init()">
 <!-- this is a comment in the body -->
     <p> hey world! <3</p>
     <p> bye world! <3</p>
     <p class="top">i love this color combination</p>
     <p class="top">but i love this one a bit less</p>
     <p class="top" id="john">i don't like this color combination but it is special</p>
-        <img src="Images/DSC07270.jpg" alt="woman standing on rocks close to the Mediterranean"
+        <img id="changeimage" src="Images/DSC07270.jpg" alt="woman standing on rocks close to the Mediterranean"
              width="800">
         <video width="800" controls loop autoplay muted>
             <source src="Videos/SDV_0531_6.mp4" type="video/mp4">
